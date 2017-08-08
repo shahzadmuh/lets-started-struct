@@ -5,11 +5,11 @@ GCCPARAMS = -Iinclude
 CFLAGS=-I/include
 OBJ=main
 
-SRC= libjalali/jalali.c \
-	 libbase64/encode.c \
-	 libbase64/decode.c \
+SRC= libs/libjalali/jalali.c \
+	 libs/libbase64/encode.c \
+	 libs/libbase64/decode.c \
 	 util/utility.c \
-	 libbase64/main.c
+	 libs/libbase64/main.c
 
 all:
 	
