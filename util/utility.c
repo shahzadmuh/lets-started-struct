@@ -172,5 +172,25 @@ bytes_to_string(long long bytes) {
   asprintf(&str, fmt, bytes / div);
   return str;
 }
+
+/*
+	int arr[] = {4, 2, 4, 5, 2, 3, 1};
+	int arr_size = sizeof(arr)/sizeof(arr[0]);  
+	findDup(arr, arr_size);
+*/
+
+void findDup(int arr[], int size)
+{
+  int *count = (int *)malloc(sizeof(size));
+  int i;
+  for(i = 0; i < size; i++)
+  {  
+    if(count[arr[i]] == 1)
+      printf(" duplicate value in array : %d \n", arr[i]);
+    else
+     	count[arr[i]]++;
+  }    
+}     
+
 #endif
 
